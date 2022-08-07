@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  background-color: #d9ead3;
+}
 body, html {
   height: 100%;
   padding: 0;
@@ -12,17 +14,17 @@ body, html {
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #d9ead3;
   font-weight: bold;
   transition: color .1s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: #a7a7a7;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #666666;
   border: 0;
   padding: 1%;
   color: white;
@@ -30,10 +32,11 @@ button {
   transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
+  width: 100%;
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #a7a7a7;
 }
 
 .post-list {
@@ -75,15 +78,21 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  background-color: #231010;
+  color: #d9ead3;
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 2.8em;
+  color: #231010;
+  background-color: #d9ead3;
+  padding:  10px 25px;
+  border-radius: 5px;
+  box-shadow:  5px 5px #a7a7a7;
 }
 
 main {
@@ -94,19 +103,19 @@ main {
 .btn-no-style {
   background: none;
   border: none;
-  padding: 0;
+  padding: 10px 30px;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #d9ead3;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
-  margin-left: 16px;
+  
 }
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: #a7a7a7;
 }
 
 .delete-post-btn {
@@ -120,12 +129,26 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  border: 5px solid #231010;
+}
+.post .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #231010;
+  color: #d9ead3;
+  font-size: 1.2em;
+  padding: 10px 5px;
 }
 
 .post .title span {
   font-style: italic;
-  font-size: 90%;
+  font-size: 70%;
   color: #7d7d7d;
+}
+
+.post .content {
+  padding: 20px;
 }
 
 .edit-link {
