@@ -110,6 +110,7 @@ main {
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
+  width: fit-content;
   
 }
 
@@ -152,6 +153,7 @@ main {
 }
 
 .edit-link {
+  color: #7d7d7d;
   display: block;
   margin: -1.5% 0 2% 0;
 }
