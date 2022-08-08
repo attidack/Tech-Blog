@@ -8,7 +8,7 @@
   This is a tech blog that you can share posts and have people comment on them
 
   ## Live Link
-  non
+ https://tech-blog-attidack.herokuapp.com/
 
   ## Screenshot
   ![Screenshot](/public/imgs/Screenshot.png)
