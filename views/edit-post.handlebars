@@ -1,5 +1,5 @@
 
-  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <a href="/dashboard" style="color: blue;"> &larr; Back to dashboard</a>
  
 <article class="post">
   <div class="title">
@@ -8,8 +8,12 @@
   <div class="content">
     <form class="edit-post-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <textarea name="post_text" id="post_text">{{post.post_text}}</textarea>
+      <label for="post-title">Title</label>
+      <input name="post-title" type="text"  style="width: 100%;" value="{{post.title}}" />
+    </div>
+    <div>
+      <label for="post_text">Post</label>
+      <textarea name="post_text" id="post_text" style="width: 100%;">{{post.post_text}}</textarea>
     </div>
     <div>
      Created by you on {{format_date post.created_at}}
